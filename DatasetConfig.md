@@ -20,5 +20,10 @@ filters:
 
 - **Location:** {{Location}}
 - **Other Sites:** {{Other sites}}
+- **Resilience:** {{RESILIENCE CATEGORY}}
+- **Wellbeing:** {{WELLBEING CATEGORY}}
+- **Environmental Sustainability**: {{ENVIRONMENTAL SUSTAINABILITY CATEGORY}}
+- **Disturbance**: {{DISTURBANCE CATEGORIES}}
+- **Other tags**: {{OTHER TAGS}}
 
 [View online]({{Hyperlink}})
