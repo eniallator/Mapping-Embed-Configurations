@@ -6,10 +6,10 @@ filters:
   Publication type: Combo
   Data Type: Combo
   Resilience: Combo
-  WELLBEING CATEGORY: Combo
-  ENVIRONMENTAL SUSTAINABILITY CATEGORY: Combo
-  DISTURBANCE CATEGORIES: Combo
-  OTHER TAGS: Combo
+  Wellbeing: Combo
+  Environmental Sustainability: Combo
+  Disturbance tags: Combo
+  Other tags: Combo
 ---
 
 ##### {{Study citation}}
