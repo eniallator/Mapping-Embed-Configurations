@@ -5,7 +5,7 @@ shortDescription: Short description
 filters:
   Publication type: Combo
   Data Type: Combo
-  RESILIENCE CATEGORY: Combo
+  Resilience: Combo
   WELLBEING CATEGORY: Combo
   ENVIRONMENTAL SUSTAINABILITY CATEGORY: Combo
   DISTURBANCE CATEGORIES: Combo
