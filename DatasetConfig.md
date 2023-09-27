@@ -21,7 +21,7 @@ filters:
 - **Location:** {{Location}}
 - **Other Sites:** {{Other sites}}
 - **Resilience:** {{Resilience}}
-- **Wellbeing:** {Wellbeing}}
+- **Wellbeing:** {{Wellbeing}}
 - **Environmental Sustainability**: {{Environmental Sustainability}}
 - **Disturbance**: {{Disturbance tags}}
 - **Other tags**: {{Other tags}}
