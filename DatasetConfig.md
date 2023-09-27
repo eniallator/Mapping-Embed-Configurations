@@ -20,10 +20,10 @@ filters:
 
 - **Location:** {{Location}}
 - **Other Sites:** {{Other sites}}
-- **Resilience:** {{RESILIENCE CATEGORY}}
-- **Wellbeing:** {{WELLBEING CATEGORY}}
-- **Environmental Sustainability**: {{ENVIRONMENTAL SUSTAINABILITY CATEGORY}}
-- **Disturbance**: {{DISTURBANCE CATEGORIES}}
-- **Other tags**: {{OTHER TAGS}}
+- **Resilience:** {{Resilience}}
+- **Wellbeing:** {Wellbeing}}
+- **Environmental Sustainability**: {{Environmental Sustainability}}
+- **Disturbance**: {{Disturbance tags}}
+- **Other tags**: {{Other tags}}
 
 [View online]({{Hyperlink}})
