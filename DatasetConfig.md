@@ -8,7 +8,7 @@ filters:
   Resilience: Combo
   Wellbeing: Combo
   Environmental Sustainability: Combo
-  Disturbance tags: Combo
+  Disturbance: Combo
   Other tags: Combo
 ---
 
