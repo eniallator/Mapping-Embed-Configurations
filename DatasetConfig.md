@@ -8,7 +8,7 @@ filters:
   Resilience: Combo
   Wellbeing: Combo
   Environmental Sustainability: Combo
-  Disturbance tags: Combo
+  Disturbance: Combo
   Other tags: Combo
 ---
 
@@ -23,7 +23,7 @@ filters:
 - **Resilience:** {{Resilience}}
 - **Wellbeing:** {{Wellbeing}}
 - **Environmental Sustainability**: {{Environmental Sustainability}}
-- **Disturbance**: {{Disturbance tags}}
+- **Disturbance**: {{Disturbance}}
 - **Other tags**: {{Other tags}}
 
 [View online]({{Hyperlink}})
