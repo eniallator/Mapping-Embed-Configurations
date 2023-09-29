@@ -23,7 +23,7 @@ filters:
 - **Resilience:** {{Resilience}}
 - **Wellbeing:** {{Wellbeing}}
 - **Environmental Sustainability**: {{Environmental Sustainability}}
-- **Disturbance**: {{Disturbance tags}}
+- **Disturbance**: {{Disturbance}}
 - **Other tags**: {{Other tags}}
 
 [View online]({{Hyperlink}})
