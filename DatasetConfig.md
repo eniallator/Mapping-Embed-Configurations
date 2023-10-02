@@ -18,7 +18,7 @@ filters:
 
 {{Summary}}
 
-- **Location:** {{Location}}
+ **Location:** {{Location}}
 - **Other Sites:** {{Other sites}}
 - **Resilience:** {{Resilience}}
 - **Wellbeing:** {{Wellbeing}}
