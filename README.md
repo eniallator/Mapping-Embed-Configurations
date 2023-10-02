@@ -32,7 +32,7 @@ longitude: LON_COLUMN_HEADER
 shortDescription: DESC_COLUMN_HEADER
 filters:
   A_COLUMN_HEADER: Radio
-  B_COLUMN_HEADER: Combo
+  B_COLUMN_HEADER: Standard
 ---
 
 ## {{TITLE_COLUMN_HEADER}}
@@ -59,18 +59,19 @@ These lines in the YAML specification, should be set to the headers of the corre
 
 ### Filters
 
-Filters are what appear on the sidebar menu, where they can either be one of two types: a `Radio` filter, or a `Combo` filter.
+Filters are what appear on the sidebar menu, where they can either be one of two types: a `Radio` filter, or a `Standard` filter.
 
-Combo filters are useful for cases where publications can have multiple values for a column. This is because they let you select multiple values at once, and then decide whether the results must contain some of the selected options, or if they must contain every single selected option.
+Standard filters are useful for cases where publications can have multiple values for a column. This is because they let you select multiple values at once, and then decide whether the results must contain some of the selected options, or if they must contain every single selected option.
 
-Radio filters are good for single value columns, as they only let you select one value at a time, where the resulting publications must have the same value in that column. They can, however be used for multiple value columns as well, since you can also only select a single value in a Combo filter.
+Radio filters are effectively the same as a standard filter, however they have a radio button on the filter title. This controls all the options, where if you turn it on, then all of the options will also turn on, and turning it off will also turn all the options off.
+Radio filters will also be options in the publication heatmap.
 
 As the template has, filters are defined with the column header you want to filter with and the filter type, like so:
 
 ```yaml
 filters:
   A_COLUMN_HEADER: Radio
-  B_COLUMN_HEADER: Combo
+  B_COLUMN_HEADER: Standard
 ```
 
 You can also have as many filters as you like.
@@ -126,3 +127,72 @@ Once you've done the above, the iframe tag should look something like this:
   data-gid="0123456789"
 ></iframe>
 ```
+
+## Developer Information
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Installation
+
+This repository uses Node version `v19.2.0`. Once you have this installed, make sure you also install `yarn` globally, with
+
+```properties
+npm install yarn -G
+```
+
+Once you have this installed, run
+
+```properties
+yarn
+```
+
+This will install the needed dependencies.
+
+### Available Scripts
+
+In the project directory, you can run:
+
+#### `yarn start`
+
+Runs the app in development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+#### `yarn test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+#### `yarn build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+#### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+#### `yarn findissues`
+
+This command will run typescript's type checker, as well as lint using eslint.
+
+## Glossary
+
+| Term     | Definition                                                               |
+| -------- | ------------------------------------------------------------------------ |
+| Config   | A set of settings, or configurations meaning to customize to your liking |
+| Markdown | A way to produce some formatted text and have basic control over layout  |
+| YAML     | A Configuration format                                                   |
