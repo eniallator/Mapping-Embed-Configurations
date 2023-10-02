@@ -5,9 +5,9 @@ shortDescription: Short description
 filters:
   Publication type: Standard
   Data Type: Standard
-  Resilience: Radio
-  Wellbeing: Standard
-  Environmental Sustainability: Standard
+  Resilience: Radio_on
+  Wellbeing: Radio_off
+  Environmental Sustainability: Radio_off
   Disturbance tags: Standard
   Other tags: Standard
 ---
