@@ -10,7 +10,7 @@ filters:
 
 ---
 
-{{Summary}}\
+{{Summary}}
 
 **Location:** {{Location}}\
 **Other Sites:** {{Other sites}}\
