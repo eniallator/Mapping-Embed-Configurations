@@ -19,11 +19,11 @@ filters:
 {{Summary}}
 
  **Location:** {{Location}}
-- **Other Sites:** {{Other sites}}
-- **Resilience:** {{Resilience}}
-- **Wellbeing:** {{Wellbeing}}
-- **Environmental Sustainability**: {{Environmental Sustainability}}
-- **Disturbance**: {{Disturbance tags}}
-- **Other tags**: {{Other tags}}
+ **Other Sites:** {{Other sites}}
+ **Resilience:** {{Resilience}}
+ **Wellbeing:** {{Wellbeing}}
+ **Environmental Sustainability**: {{Environmental Sustainability}}
+ **Disturbance**: {{Disturbance tags}}
+ **Other tags**: {{Other tags}}
 
 [View online]({{Hyperlink}})
