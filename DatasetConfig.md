@@ -3,13 +3,13 @@ latitude: Latitude N
 longitude: Longitude E
 shortDescription: Short description
 filters:
-  Publication type: Combo
-  Data Type: Combo
-  Resilience: Combo
-  Wellbeing: Combo
-  Environmental Sustainability: Combo
-  Disturbance tags: Combo
-  Other tags: Combo
+  Publication type: Standard
+  Data Type: Standard
+  Resilience: Radio
+  Wellbeing: Radio
+  Environmental Sustainability: Radio
+  Disturbance tags: Standard
+  Other tags: Standard
 ---
 
 ##### {{Study citation}}
