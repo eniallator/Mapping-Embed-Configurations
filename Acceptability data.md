@@ -11,5 +11,6 @@ filters:
 ---
 
 {{Summary}}
-
+**Location:** {{Location}}\
+**Other Sites:** {{Other sites}}\
 [View online]({{Hyperlink}})
