@@ -24,6 +24,6 @@ filters:
  **Wellbeing:** {{Wellbeing}}\
  **Environmental Sustainability**: {{Environmental Sustainability}}\
  **Disturbance**: {{Disturbance tags}}\
- **Other tags**: {{Other tags}}\
+ **Other tags**: {{Other tags}}
 
 [View online]({{Hyperlink}})
