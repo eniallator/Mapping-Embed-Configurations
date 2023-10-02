@@ -6,8 +6,8 @@ filters:
   Publication type: Standard
   Data Type: Standard
   Resilience: Radio
-  Wellbeing: Radio
-  Environmental Sustainability: Radio
+  Wellbeing: Standard
+  Environmental Sustainability: Standard
   Disturbance tags: Standard
   Other tags: Standard
 ---
