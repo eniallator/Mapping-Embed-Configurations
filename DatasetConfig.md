@@ -1,4 +1,6 @@
 ---
+title: Evidence Matrix
+blurb: Evidence matrix embed with some **rich text** _blurb formatting_.
 latitude: Latitude N
 longitude: Longitude E
 shortDescription: Short description
