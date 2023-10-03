@@ -13,7 +13,7 @@ filters:
   Resilience: Radio_on
   Wellbeing: Radio_off
   Environmental Sustainability: Radio_off
-  Disturbance tags: Standard
+  Disturbance: Standard
   Other tags: Standard
 ---
 
@@ -28,7 +28,7 @@ filters:
  **Resilience:** {{Resilience}}\
  **Wellbeing:** {{Wellbeing}}\
  **Environmental Sustainability**: {{Environmental Sustainability}}\
- **Disturbance**: {{Disturbance tags}}\
+ **Disturbance**: {{Disturbance}}\
  **Other tags**: {{Other tags}}
 
 [View online]({{Hyperlink}})
