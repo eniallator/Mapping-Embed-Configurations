@@ -3,6 +3,7 @@
 ## Dataset Specification
 
 This embed uses a CSV or Google sheet as its dataset. The sheet must obey a few rules for it to work.
+Firstly, the google sheet **must** contain a single sheet, rather than having multiple sheets across multiple tabs.
 There are firstly two types of column that this embed uses. The first type is just a basic column, where all the values appear in the dataset unchanged. Then the next type of column is a multi-value column, where you specify a few possible values that the column has, and then each row in the dataset will specify whether it contains that value, or not.
 
 Firstly the sheet must have 2 header rows, where the very top row contains column headers/special flags.
@@ -35,7 +36,7 @@ filters:
   B_COLUMN_HEADER: Standard
 ---
 
-## {{TITLE_COLUMN_HEADER}}
+##### {{TITLE_COLUMN_HEADER}}
 
 ---
 
@@ -65,13 +66,15 @@ Standard filters are useful for cases where publications can have multiple value
 
 Radio filters are effectively the same as a standard filter, however they have a radio button on the filter title. This controls all the options, where if you turn it on, then all of the options will also turn on, and turning it off will also turn all the options off.
 Radio filters will also be options in the publication heatmap.
+These radio filters can have their initial value being _on_, or _off_ which is set by putting `Radio_on` for an on initial state, or `Radio_off` for an off initial state.
 
 As the template has, filters are defined with the column header you want to filter with and the filter type, like so:
 
 ```yaml
 filters:
-  A_COLUMN_HEADER: Radio
-  B_COLUMN_HEADER: Standard
+  A_COLUMN_HEADER: Radio_on
+  B_COLUMN_HEADER: Radio_off
+  C_COLUMN_HEADER: Standard
 ```
 
 You can also have as many filters as you like.
@@ -103,7 +106,6 @@ There are some required and some conditional data attributes. These are:
 - Then there's also attributes which will configure the source, where you must include one source
   - Google sheets source:
     - `data-google-sheet`: Contains the google sheet ID (to find this, refer to the below)
-    - `data-gid`: Contains the gid search parameter on a google sheet
   - Custom CSV source:
     - `data-csv`: Contains the URL of the raw CSV itself
 
@@ -111,8 +113,8 @@ To find the google sheets attribute values, use:
 
 ```text
 https://docs.google.com/spreadsheets/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/edit#gid=0123456789
-                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^          ^^^^^^^^^^
-                                       [data-google-sheet]                                   [data-gid]
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                       [data-google-sheet]
 ```
 
 Once you've done the above, the iframe tag should look something like this:
@@ -124,7 +126,6 @@ Once you've done the above, the iframe tag should look something like this:
   data-config="./dataset-config.md"
   data-mapbox-token="pk.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.XXXXXXXXXXXXXXXXXXXX-w"
   data-google-sheet="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-  data-gid="0123456789"
 ></iframe>
 ```
 
