@@ -6,7 +6,7 @@ filters:
   Publication type: Standard
 ---
 
-## {{Study citation}}
+##### {{Study citation}}
 
 ---
 
