@@ -24,6 +24,8 @@ To make a multi-value column, there's a few things you need to do:
 
 Dataset configs are written using both [YAML][yaml] as well as [Markdown][markdown], where the [YAML][yaml] will appear as front-matter in the [markdown][markdown] config file.
 
+I would recommend putting your configuration on github, in a repository. Use this guide on [how to create a github repository](https://docs.github.com/en/get-started/quickstart/create-a-repo).
+
 An example config template:
 
 ```text
