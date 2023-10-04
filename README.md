@@ -22,18 +22,21 @@ To make a multi-value column, there's a few things you need to do:
 
 ## Creating A Dataset Config
 
-Dataset configs are written using both YAML as well as Markdown, where the YAML will appear as front-matter in the markdown config file.
+Dataset configs are written using both [YAML][yaml] as well as [Markdown][markdown], where the [YAML][yaml] will appear as front-matter in the [markdown][markdown] config file.
 
 An example config template:
 
 ```text
 ---
+title: Embed title
+blurb: A blurb appearing right below the title, capable of having _**rich text formatting**_
 latitude: LAT_COLUMN_HEADER
 longitude: LON_COLUMN_HEADER
 shortDescription: DESC_COLUMN_HEADER
 filters:
-  A_COLUMN_HEADER: Radio
-  B_COLUMN_HEADER: Standard
+  A_COLUMN_HEADER: Radio_on
+  B_COLUMN_HEADER: Radio_off
+  C_COLUMN_HEADER: Standard
 ---
 
 ##### {{TITLE_COLUMN_HEADER}}
@@ -45,18 +48,23 @@ filters:
 [View online]({{HYPERLINK_COLUMN_HEADER}})
 ```
 
-Firstly, there are landmarks in this file, where the first line with the `---`, must be within any config file. Similarly, there's a next set of `---` which signifies the end of the YAML config (There is a third set as well, however that's part of the markdown and means a horizontal line separator, more on this below).
+Firstly, there are landmarks in this file, where the first line with the `---`, must be within any config file. Similarly, there's a next set of `---` which signifies the end of the [YAML][yaml] config (There is a third set as well, however that's part of the [markdown][markdown] and means a horizontal line separator, more on this below).
 
-After that will come the Markdown which specifies how to render the preview of the publication (more on this below).
+After that will come the [Markdown][markdown] which specifies how to render the preview of the publication (more on this below).
 
-## YAML Specification
+## [YAML][yaml] Specification
 
-To learn how YAML works, you can have a look at [https://learnxinyminutes.com/docs/yaml/](https://learnxinyminutes.com/docs/yaml/).
+To learn how [YAML][yaml] works, you can have a look at [https://learnxinyminutes.com/docs/yaml/](https://learnxinyminutes.com/docs/yaml/).
 This isn't necessary, however, as you should be able to use the above template, as well as using the instructions below.
+
+### Title And Blurb
+
+These can be anything you like, where the title will appear at the top of the embed, and then the blurb appearing right below the title.
+The blurb can also use [Markdown][markdown] for rich text formatting.
 
 ### Latitude, Longitude, And Short Description
 
-These lines in the YAML specification, should be set to the headers of the corresponding columns in your dataset.
+These lines in the [YAML][yaml] specification, should be set to the headers of the corresponding columns in your dataset.
 
 ### Filters
 
@@ -81,27 +89,27 @@ You can also have as many filters as you like.
 
 ## Markdown Publication Preview Specification
 
-In the template, after the YAML there's some markdown text. If you don't know how markdown works, then refer to this guide: [https://commonmark.org/help/](https://commonmark.org/help/), or for more advanced usage, use: [https://spec.commonmark.org/0.30/](https://spec.commonmark.org/0.30/).
+In the template, after the [YAML][yaml] there's some [markdown][markdown] text. If you don't know how [markdown][markdown] works, then refer to this guide: [https://commonmark.org/help/][markdown], or for more advanced usage, use: [https://spec.commonmark.org/0.30/](https://spec.commonmark.org/0.30/).
 
-There are also some bits in the markdown which are like so: `{{ some_column_header }}`. This will insert the corresponding value in the `some_column_header` column from the selected publication.
+There are also some bits in the [markdown][markdown] which are like so: `{{ some_column_header }}`. This will insert the corresponding value in the `some_column_header` column from the selected publication.
 
 ## Embed Setup
 
 Firstly, place an iframe in your HTML, where you'd like the embed to go. Then also add the following script tag:
 
 ```html
-<script src="<BASE_URL>/embed.js"></script>
+<script src="<EMBED_URL>/embed.js"></script>
 ```
 
-Where you should replace `<BASE_URL>` with the base URL of where the embed is being hosted
+Where you should replace `<EMBED_URL>` with the link to the embed.
 
 ### Iframe Data Attributes
 
 There are some required and some conditional data attributes. These are:
 
 - Required:
-  - `data-map-embed`: Contains the BASE URL of the embed itself
-  - `data-config`: Contains the URL of the dataset config markdown file
+  - `data-map-embed`: Contains the link to the embed itself
+  - `data-config`: Contains the URL of the dataset config [markdown][markdown] file
   - `data-mapbox-token`: Contains the public token for mapbox
 - Then there's also attributes which will configure the source, where you must include one source
   - Google sheets source:
@@ -122,7 +130,7 @@ Once you've done the above, the iframe tag should look something like this:
 ```html
 <iframe
   title="Map Embed"
-  data-map-embed="https://map-embed-base-url.com/"
+  data-map-embed="https://map-embed.com/"
   data-config="./dataset-config.md"
   data-mapbox-token="pk.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.XXXXXXXXXXXXXXXXXXXX-w"
   data-google-sheet="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
@@ -192,8 +200,11 @@ This command will run typescript's type checker, as well as lint using eslint.
 
 ## Glossary
 
-| Term     | Definition                                                               |
-| -------- | ------------------------------------------------------------------------ |
-| Config   | A set of settings, or configurations meaning to customize to your liking |
-| Markdown | A way to produce some formatted text and have basic control over layout  |
-| YAML     | A Configuration format                                                   |
+| Term                 | Definition                                                               |
+| -------------------- | ------------------------------------------------------------------------ |
+| Config               | A set of settings, or configurations meaning to customize to your liking |
+| [Markdown][markdown] | A way to produce some formatted text and have basic control over layout  |
+| [YAML][yaml]         | A Configuration format                                                   |
+
+[markdown]: https://commonmark.org/help/
+[yaml]: https://learnxinyminutes.com/docs/yaml/
