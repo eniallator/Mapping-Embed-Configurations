@@ -61,7 +61,7 @@ This isn't necessary, however, as you should be able to use the above template, 
 
 ### Title And Blurb
 
-These can be anything you like, where the title will appear at the top of the embed, and then the blurb appearing right below the title.
+These are optional and can be anything you like, where the title will appear at the top of the embed, and then the blurb appearing right below the title.
 The blurb can also use [Markdown][markdown] for rich text formatting.
 
 ### Latitude, Longitude, And Short Description
@@ -113,6 +113,8 @@ There are some required and some conditional data attributes. These are:
   - `data-map-embed`: Contains the link to the embed itself
   - `data-config`: Contains the URL of the dataset config [markdown][markdown] file
   - `data-mapbox-token`: Contains the public token for mapbox
+- Optional:
+  - `additional-css`: A link to any additional CSS you would like to apply to the embed. This allows you to create a unique looking embed
 - Then there's also attributes which will configure the source, where you must include one source
   - Google sheets source:
     - `data-google-sheet`: Contains the google sheet ID (to find this, refer to the below)
@@ -135,6 +137,7 @@ Once you've done the above, the iframe tag should look something like this:
   data-map-embed="https://map-embed.com/"
   data-config="./dataset-config.md"
   data-mapbox-token="pk.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.XXXXXXXXXXXXXXXXXXXX-w"
+  additional-css="./myStyles.css"
   data-google-sheet="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 ></iframe>
 ```
