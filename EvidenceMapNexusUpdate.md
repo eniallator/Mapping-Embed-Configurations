@@ -1,5 +1,5 @@
 ---
-#https://map-embed-service.onrender.com/?config=https%3A%2F%2Fraw.githubusercontent.com%2Feniallator%2FMapping-Embed-Configurations%2Fmain%2FDatasetConfig.md&google-sheet=196PI6Xa63hCsHilOCzRdW_IJ2EQYyWSGXwJyix0vt2Y&gid=2116220483&mapbox-token=pk.eyJ1IjoibmNvbGVtYW5jbGFya2UiLCJhIjoiY2xrcXU4b3JjMG85NzNzcG51eXZzMXN1YiJ9.nCchJ5LdX1_ndrSc3IFb-w
+#https://map-embed-service.onrender.com/?config=https%3A%2F%2Fraw.githubusercontent.com%2Feniallator%2FMapping-Embed-Configurations%2Fmain%2FDatasetConfig.md&google-sheet=196PI6Xa63hCsHilOCzRdW_IJ2EQYyWSGXwJyix0vt2Y&gid=2116220483&mapbox-token=pk.eyJ1IjoibmNvbGVtYW5jbGFya2UiLCJhIjoiY2xrcXU4b3JjMG85NzNzcG51eXZzMXN1YiJ9.nCchJ5LdX1_ndrSc3IFb-w](https://map-embed-service.onrender.com/?mapbox-token=pk.eyJ1IjoiamFjcXVpZWFsZXMiLCJhIjoiY2x2YzZkZ3M2MGU4bzJrcGJuaHR0b3I2MSJ9.j3uz2sxP5a1EtmZv1pNMGw&config=https%3A%2F%2Fraw.githubusercontent.com%2Feniallator%2FMapping-Embed-Configurations%2Fmain%2FEvidenceMapNexusUpdate.md&google-sheet=1lr-3MMd2HTRbJk3csZER2YbNOxZArimCNjvmGFpgtEQ
 title: An interactive map of the research relating resilience with wellbeing and/or environmental sustainability for UK coastal communities
 blurb: Each point represents a study site where data was collected.
   Inland points are midpoints, each represents a study that pooled data across multiple coastal sites.
